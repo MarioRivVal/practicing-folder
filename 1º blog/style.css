@@ -1,0 +1,59 @@
+/* colors 
+primary color: #2b8a3e
+secondary color: #ebfbee
+*/
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR:#087f5b
+GREY COLOR:#343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-tittle {
+  color: #087f5b;
+  font-size: 52px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.main-header {
+  background-color: #ebfbee;
+  margin-bottom: 64px;
+}
+
+.nav-bar {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #087f5b;
+}
