@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <title>SOME Info</title>
   </head>
   <body>
@@ -19,20 +19,25 @@
       </header>
       <article>
         <div class="author-section">
-          <img src="/img/author-photo.jpg" alt="foto fruta" width="70px" />
-          <span>
+          <img
+            src="/img/author-photo.jpg"
+            alt="foto fruta"
+            class="author-photo"
+            width="70px"
+          />
+          <span class="author-name">
             <strong>M</strong>ario <strong>V</strong>alverde
             <strong>R</strong>ivera.
           </span>
         </div>
-
-        <img
-          src="img/main-photo.jpg"
-          alt="fruit-photo"
-          class="main-photo"
-          width="500px"
-        />
-
+        <div class="main-photo-box">
+          <img
+            src="img/main-photo.jpg"
+            alt="fruit-photo"
+            width="500px"
+            class="main-photo"
+          />
+        </div>
         <h2>100% Biologico</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nisi
@@ -69,39 +74,40 @@
           </ul>
           <button>Compra</button>
         </div>
-
-        <aside>
-          <h3>Colaboraciones</h3>
-          <ul class="colab-list">
-            <li>
-              <img src="/img/colab--1.jpg" alt="colab--1" width="50px" />
-              <a href="">Hotel Bio Cuevas</a>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dolorem
-              </p>
-            </li>
-            <li>
-              <img src="/img/colab--2.jpg" alt="colab--1" width="50px" />
-              <a href="">Concurso de fotografia</a>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                similique voluptates illum dolorum accusantium magnam, mollitia
-                totam aspernatur impedit..
-              </p>
-            </li>
-            <li>
-              <img src="/img/colab--3.jpg" alt="colab--1" width="50px" />
-              <a href="">Semillas Bio</a>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique, dicta at officiis qui temporibus beatae explicabo
-                optio saepe molestias sapiente.
-              </p>
-            </li>
-          </ul>
-        </aside>
-
+        <div class="colab-box">
+          <aside >
+            <h3>Colaboraciones</h3>
+            <ul class="colab-list">
+              <li class="colab-item">
+                <img src="/img/colab--1.jpg" alt="colab--1" width="50px" />
+                <a href="">Hotel Bio Cuevas</a>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolorem
+                </p>
+              </li>
+              <li class="colab-item">
+                <img src="/img/colab--2.jpg" alt="colab--1" width="50px" />
+                <a href="">Concurso de fotografia</a>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Culpa similique voluptates illum dolorum accusantium magnam,
+                  mollitia totam aspernatur impedit..
+                </p>
+              </li>
+              <li class="colab-item">
+                <img src="/img/colab--3.jpg" alt="colab--1" width="50px" />
+                <a href="">Semillas Bio</a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dicta at officiis qui temporibus beatae explicabo
+                  optio saepe molestias sapiente.
+                </p>
+              </li>
+            </ul>
+            <button class="btn-like">💗Like</button>
+          </aside>
+        </div>
         <footer>
           <p id="copyright">
             <em>

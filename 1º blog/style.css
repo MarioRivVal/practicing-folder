@@ -1,4 +1,4 @@
-/* colors 
+/* colors
 primary color: #2b8a3e
 secondary color: #ebfbee
 */
@@ -11,7 +11,7 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-/* 
+/*
 MAIN COLOR:#087f5b
 GREY COLOR:#343a40
 */
@@ -24,6 +24,7 @@ GREY COLOR:#343a40
 body {
   font-family: sans-serif;
   color: #343a40;
+  border-top: #087f5b solid 5px;
 }
 
 .container {
@@ -34,14 +35,18 @@ body {
 .main-tittle {
   color: #087f5b;
   font-size: 52px;
-  margin-top: 48px;
+
   margin-bottom: 12px;
   text-align: center;
 }
 
 .main-header {
   background-color: #ebfbee;
-  margin-bottom: 64px;
+  margin-bottom: 86px;
+  margin-top: 48px;
+  border: #087f5b solid 0.5px;
+  border-radius: 5px;
+  position: relative;
 }
 
 .nav-bar {
@@ -49,11 +54,103 @@ body {
   text-align: center;
   padding-bottom: 18px;
 }
-
-a:link {
+a {
+  color: #087f5b;
   text-decoration: none;
 }
 
 a:hover {
+  color: #bf1a1a;
+}
+.author-section {
+  margin-bottom: 16px;
+}
+.author-name {
+  font-style: italic;
+  font-size: 18px;
   color: #087f5b;
+  margin-left: 12px;
+}
+.main-photo-box {
+  text-align: center;
+  background-color: #ebfbee;
+  padding: 16px 0;
+  border: #087f5b solid 0.5px;
+  margin-bottom: 86px;
+  border-radius: 5px;
+}
+.main-photo {
+  border: #087f5b solid 0.5px;
+  border-radius: 5px;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #087f5b;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 52px;
+}
+ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.buy-fruit {
+  margin-bottom: 60px;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #087f5b;
+  color: #ebfbee;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #bf1a1a;
+}
+.colab-box {
+  width: 500px;
+  border: #087f5b solid 0.5px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #ebfbee;
+  margin: 0 auto 28px;
+  position: relative;
+}
+h3 {
+  text-transform: uppercase;
+  color: #087f5b;
+  font-size: 23px;
+  text-decoration: underline solid #087f5b;
+  margin-bottom: 18px;
+}
+.colab-item a {
+  margin-left: 15px;
+}
+footer {
+  text-align: center;
+}
+.btn-like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.main-header::after {
+  content: "NATURAL";
+  background-color: #bf1a1a;
+  color: #ebfbee;
+  padding: 10px;
+  position: absolute;
+  bottom: -20px;
+  right: -47px;
 }
