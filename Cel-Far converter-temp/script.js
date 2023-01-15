@@ -1,20 +1,57 @@
-'use strict'
+"use strict";
 
-// const tempCel = Number (prompt ("Temperatura Celsius?"));
-// const tempFahr = (tempCel * (9/5)) + 32;  
-// //FORMULA PARA FAHRENHEIT - CELSIUS - (Fº - 32) * (5/9)
-// alert ( `la temperatura en Fahrenheit es ${tempFahr}`);
+//fahrenheit
 
- const resultEl = document.querySelector('.result');
- const celciusTempEl = document.querySelector('.temp-1');
- const summitEl = document.querySelector('.btn-summit');
+//Creating variables
 
- 
+//temps
+const currentTempNameEl = document.querySelector(".temp-name");
+const currentResultNameEl = document.querySelector(".result-name");
+
+//bottoms
+const btnSendEl = document.querySelector(".btn-send");
+const btnSwitchEl = document.querySelector(".btn-switch");
+// result-line
+const resultLineEl = document.querySelector(".result-line");
+
+//initial values
+let currentTemp;
+currentTempNameEl.textContent = "celcius";
+currentResultNameEl.textContent = "fahrenheit";
+
+//creating function for calculation
+const calcTemp1 = function () {
+  const t = currentTemp * (9 / 5) + 32;
+  return t;
+};
+
+const calcTemp2 = function () {
+  const t = (currentTemp - 32) * (5 / 9);
+  return t;
+};
 
 
 
- summitEl.addEventListener('click', function(){
- 
+//events
+// changing temperature
 
- })
 
+btnSendEl.addEventListener("click", function () {
+  currentTemp = document.querySelector(".current-temp").value;
+  if (currentTempNameEl.textContent == "celcius") {
+    resultLineEl.textContent = `${calcTemp1()} grados`;
+  } else {
+    resultLineEl.textContent = `${calcTemp2()} grados`;
+  }
+});
+// switching scale
+btnSwitchEl.addEventListener("click", function () {
+  if (currentTempNameEl.textContent == "celcius") {
+    currentTempNameEl.textContent = "fahrenheit";
+    currentResultNameEl.textContent = "celcius";
+   
+  }else{
+    currentTempNameEl.textContent = "celcius";
+    currentResultNameEl.textContent = "fahrenheit";
+  }
+});

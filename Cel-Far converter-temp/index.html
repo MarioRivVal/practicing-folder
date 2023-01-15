@@ -6,63 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-
-      *{
+      * {
         margin: 0;
         padding: 0;
       }
-      body{
+      body {
         font-family: sans-serif;
         font-size: 36px;
       }
-      .main-box{
+      .main-box {
         width: 500px;
         margin: 40vh auto;
-        
       }
-      .temp-scale{
+      .label-name {
         text-transform: uppercase;
-        font-weight: bold;
-      }
-      .temp{
-        border: 2px solid;
         
-        height: 30px;
       }
-      .btn-summit{
-        padding: 15px 25px;
+      .box {
+        margin-bottom: 20px;
+      }
+      .btn {
+        padding: 2%;
+        margin-bottom: 20px;
         text-transform: uppercase;
-        font-size: large;
-        margin-bottom: 40px;
-
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
       }
-
-      .box{
-        margin-bottom: 40px;
-      }
-      .result{
-        
-        border: black solid 2px;
-        width: 500px;
+     
+      .current-temp {
+        width: 60px;
         height: 30px;
+        border: 3px solid red;
+        border-radius: 8px;
+        font-size: 23px;
       }
-
-
+      .result-line {
+        height: 30px;
+        border: 3px solid red;
+        font-size: 23px;
+        border-radius: 8px;
+      }
     </style>
     <title>Celscius & Fahrenheit Converter</title>
   </head>
   <body>
     <div class="main-box">
-      <div class="box box-1">
-        <label for="celcius" class="temp-scale celcius-temp">Celcius</label>
-        <input type="number" class="temp temp-1" />
+      <div class="box box-value">
+        <label for="temp-name" class="label-name temp-name"></label>
+        <input type="number" class="current-temp" />
       </div>
-      <div class="box box-2">
-        <label for="Fahrenheit" class="temp-scale Fahrenheit-temp">Fahrenheit</label>
-        <input type="number" class="temp temp-2">
+      <button class="btn btn-switch">cambio</button>
+      <div class="box box-result">
+        <label for="result" class="label-name result-name"></label>
+        <div class="result-line"></div>
       </div>
-      <button class="btn-summit">Envio</button>
-      <div class="result"></div>
+      <button class="btn btn-send">Envio</button>
+
+     
     </div>
     <script src="script.js"></script>
   </body>
