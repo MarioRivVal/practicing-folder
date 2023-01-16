@@ -1,0 +1,33 @@
+/* colors
+greylight #f1f3f5 
+greylighter #f8f9fa
+ mainblue #1864ab
+ greenLighter #c3fae8
+ greenLight #96f2d7
+ greenDarker #63e6be
+ text #212529
+
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: 'Roboto'
+
+}
+.main-container{
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+.left-container{
+  background-color:#f1f3f5 ;
+
+}
+.right-container{
+  background-color: #63e6be;
+}
