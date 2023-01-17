@@ -9,6 +9,7 @@ greylighter #f8f9fa
 
 */
 
+/*right container*/
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +43,7 @@ body {
 .nav-group {
   display: flex;
   align-items: center;
-  margin: 30px 0 98px 62px;
+  margin: 30px 0 80px 62px;
 }
 h3 {
   font-size: 30px;
@@ -55,7 +56,6 @@ h3 {
   width: 650px;
   display: flex;
   justify-content: start;
-
   margin-left: 36px;
   list-style: none;
 }
@@ -64,19 +64,16 @@ a {
   text-decoration: none;
   margin-left: 40px;
   color: #212529;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 a:hover{
   color: #1864ab;
+ text-decoration-line:underline;
+ 
 }
-a:active{
-  font-size: 11px;
-}
-.right-container {
-  background-color: #63e6be;
-  border-radius: 0 30px 30px 0;
-}
+
+
 .tittle-container {
   margin-left: 152px;
   margin-bottom: 98px;
@@ -103,10 +100,11 @@ h1 {
 .p1,
 .p2,
 .p3 {
-  font-size: 52px;
+  font-size: 62px;
   font-weight: 900;
-  word-spacing: 4px;
-  line-height: 56px;
+  word-spacing: 12px;
+  line-height: 64px;
+  letter-spacing: 1px;
 }
 .p3{
   margin-bottom: 50px;
@@ -120,11 +118,71 @@ h1 {
  border: none;
   background-color:#1864ab ;
   color:#f8f9fa;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
   margin-top: 23px;
   cursor: pointer;
 }
 .btn-book:hover{
   background-color: #63e6be;
   color: #212529;
+}
+
+/*right container*/
+.right-container {
+  background-color: #63e6be;
+  border-radius: 0 30px 30px 0;
+  position: relative;
+}
+
+
+.contact-num-book{
+  display: flex;
+  align-items: center;
+  font-weight:500;
+  margin:30px 50px 60px 120px;
+  
+}
+
+.btn-book-now{
+  padding: 10px 20px;
+  margin-left: 30px;
+  border: #212529 solid 2px;
+  font-weight: bold;
+  background-color: #63e6be;
+}
+.btn-book-now:hover{
+  background-color:#1864ab;
+  color: #f8f9fa;
+
+}
+.main-photo-doctor{
+  position: absolute;
+  bottom: 0px;
+  left: -245px;
+}
+
+.happy-people-box{
+  display: flex;
+  position: absolute;
+  bottom: 225px;
+  right: 160px;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+.smile-logo{
+  display: flex;
+  width: 42px;
+  fill:#1864ab ;
+  padding: 3px;
+  color:#63e6be;
+  background-color:#63e6be;
+  margin-right: 24px;
+}
+
+.happy-people-num{
+  font-size: 30px;
+  font-weight:700;
+}
+.happy-people-string{
+font-weight: 700;
 }
