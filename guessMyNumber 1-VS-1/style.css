@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-container{
+  width: 1200px;
+  height: 700px;
+  margin: 60px auto;
+  background-color: #dbdbdb;
+}
