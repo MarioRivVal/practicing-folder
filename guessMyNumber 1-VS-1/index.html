@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Guess my Number 1 VS 1</title>
-</head>
-<body>
-  <div class="main-container" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess my Number 1 VS 1</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container-player--0">
+        <div class="img-box">
+          <img src="" alt="" class="dice-photo dice-photo-1" width="140px" />
+        </div>
+        <div class="score-box score-box-player--0">
+          <div class="score-text">Score</div>
+          <div class="score score-player--0">0</div>
+        </div>
+      </div>
 
-  </div>
-  <script src="script.js"></script>
-</body>
+      <div class="right-container-player--1">
+        <div class="img-box">
+          <img src="" alt="" class="dice-photo dice-photo-2" width="140px" />
+        </div>
+        <div class="score-box score-box-player--1">
+          <div class="score-text">Score</div>
+          <div class="score score-player--1">0</div>
+        </div>
+      </div>
+
+      <div class="roll-guess-newgame-box">
+        <button class="btn-roll">roll</button>
+        <input
+          type="number"
+          class="guess-number"
+          placeholder=""
+          max="6"
+          min="1"
+        />
+        <button class="btn-newgame">new</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
