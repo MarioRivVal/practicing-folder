@@ -16,41 +16,36 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
-  
 }
 
 .left-container-player--0,
-.right-container-player--1{
+.right-container-player--1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-around; 
+  justify-content: space-around;
 }
 
 .left-container-player--0 {
-  background:linear-gradient(to bottom,white, darkblue, white );
+  background: linear-gradient(to bottom, white, darkblue, white);
   margin: 5px 0 5px 5px;
   border-radius: 20px 0 0 20px;
-  
- 
 }
 .right-container-player--1 {
   margin: 5px 5px 5px 0;
-   
-   border-radius: 0 20px 20px 0;
+
+  border-radius: 0 20px 20px 0;
 }
-.img-box{
-  width:150px ;
-  height:150px ;
+.img-box {
+  width: 150px;
+  height: 150px;
   background-color: #e85968;
   border: darkblue solid 4px;
   border-radius: 10px;
 }
-.dice-photo{
+.dice-photo {
   padding: 5px;
 }
-
-
 
 .score-box {
   width: 150px;
@@ -60,21 +55,20 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border:  darkblue solid 4px;
+  border: darkblue solid 4px;
   border-radius: 10px;
 }
-.score-text{
+.score-text {
   font-size: 36px;
   text-transform: uppercase;
-  padding:0 50% 0 50%;
+  padding: 0 50% 0 50%;
   color: #e85968;
   border-bottom: darkblue solid 5px;
   border-radius: 10px;
   text-shadow: darkblue 1px 2px 2px;
   letter-spacing: 3px;
-  
 }
-.score{
+.score {
   font-size: 52px;
   color: #e85968;
   text-shadow: darkblue 1px 2px 2px;
@@ -89,14 +83,14 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
-  bottom:200px;
+  bottom: 200px;
   left: 396px;
-  
 }
-.btn-roll, .btn-newgame{
+.btn-roll,
+.btn-newgame {
   width: 80px;
   height: 80px;
   border: darkblue solid 3px;
@@ -104,13 +98,18 @@ body {
   background-color: white;
   color: #e85968;
   font-size: 25px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: 800;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: darkblue 1px 2px 2px;
   letter-spacing: 3px;
 }
-.guess-number{
+.btn-roll:hover,
+.btn-newgame:hover {
+  background-color: #e85968;
+  color: white;
+}
+.guess-number {
   width: 50px;
   height: 50px;
   border-radius: 100px;
