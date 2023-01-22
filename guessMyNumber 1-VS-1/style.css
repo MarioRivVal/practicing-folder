@@ -117,3 +117,6 @@ body {
   padding-left: 30px;
   border: darkblue solid 3px;
 }
+.hidden {
+  display: none;
+}

@@ -11,62 +11,82 @@
 
 // 1. crea funcion que ejecute el boton roll creando num ramdon tra 1 -6, muestra la cara del dado
 
+//starting setting
+
 //selecting variables
 const btnRollE = document.querySelector(".btn-roll");
 const btnNewE = document.querySelector(".btn-newgame");
+const scorePlayer0E = document.querySelector(".score-player--0");
 const scorePlayer1E = document.querySelector(".score-player--1");
-const dice0E = document.querySelector(".dice-photo--0");
-const dice1E = document.querySelector(".dice-photo--1");
+const activeDiceE = document.querySelector(".dice-photo--0");
 
-//starting setting
-let scores = [0, 0];
-let count = 0;
-let activePlayer = 0;
-let currentScore = 0;
-let playing = true;
+let scores, count, activePlayer, playing, currentScore;
+const init = function () {
+  scores = [0, 0];
+  count = 0;
+  activePlayer = 0;
+  playing = true;
+  currentScore = 0;
+  scorePlayer0E.textContent = 0;
+  scorePlayer1E.textContent = 0;
+  activeDiceE.classList.add('hidden');
+};
+init();
 
-// roll dice function
-const rollDice = function () {
+// switch player function
+
+const switchPlayer = function () {
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  count = 0;
+  currentScore = 0;
+};
+
+// roll click listener
+btnRollE.addEventListener("click", function () {
+  activeDiceE.classList.remove("hidden");
   if (playing) {
     const guessE = Number(document.querySelector(".guess-number").value);
-    if (count < 5) {
-      count++;
+    count++;
+    if (count < 6) {
       const dice = Math.trunc(Math.random() * 6) + 1;
-      dice0E.src = `img/dice-${dice}.png`;
+      activeDiceE.src = `img/dice-${dice}.png`;
 
-      console.log(`dice number  ${dice}`);
       console.log(`count ${count}`);
-      console.log(`guess ${guessE}`);
 
       if (guessE === dice) {
-        playing = false;
         switch (count) {
           case 1:
-            scores[0] = 5;
+            currentScore = 5;
             break;
           case 2:
-            scores[0] = 4;
+            currentScore = 4;
             break;
           case 3:
-            scores[0] = 3;
+            currentScore = 3;
             break;
           case 4:
-            scores[0] = 2;
+            currentScore = 2;
             break;
           case 5:
-            scores[0] = 1;
+            currentScore = 1;
             break;
           default:
             break;
         }
+        scores[activePlayer] = scores[activePlayer] + currentScore;
         document.querySelector(`.score-player--${activePlayer}`).textContent =
-          scores[0];
-
-        console.log(`array ${scores[0]}`);
+          scores[activePlayer];
+        console.log(`score ${currentScore}`);
+        console.log(scores[activePlayer]);
+        switchPlayer();
+        console.log(`player active ${activePlayer}`);
       }
     }
+    if (count == 5) {
+      switchPlayer();
+      console.log(`player active ${activePlayer}`);
+    }
   }
-};
+});
 
-// roll click listener
-btnRollE.addEventListener("click", rollDice);
+btnNewE.addEventListener("click", init)
