@@ -1,18 +1,5 @@
 "use strict";
 
-// si no hay numero,no funciona el pasa nada
-
-// escribe un numero en el espacio y rula el dado con el boton roll
-
-// si el numero elejido coincide  con el que sale en el dado, 3 puntos a la primera, 2 alla segunta 1 alla tercera y pasa al siguiente jugador, playing is false
-// terminada las 3 chances y no has acertado el numero, el juego pasa al prox jugador
-// los puntos de van sumando en score hasta que uno de los dos llehue a 20 y termina el juego.
-// a new , se resetea todo
-
-// 1. crea funcion que ejecute el boton roll creando num ramdon tra 1 -6, muestra la cara del dado
-
-//starting setting
-
 //selecting variables
 const btnRollE = document.querySelector(".btn-roll");
 const btnNewE = document.querySelector(".btn-newgame");
@@ -29,7 +16,8 @@ const init = function () {
   currentScore = 0;
   scorePlayer0E.textContent = 0;
   scorePlayer1E.textContent = 0;
-  activeDiceE.classList.add('hidden');
+  activeDiceE.classList.add("hidden");
+  document.querySelector(".guess-number").value = false;
 };
 init();
 
@@ -39,6 +27,8 @@ const switchPlayer = function () {
   activePlayer = activePlayer === 0 ? 1 : 0;
   count = 0;
   currentScore = 0;
+  document.querySelector(".guess-number").value = false;
+
 };
 
 // roll click listener
@@ -86,7 +76,7 @@ btnRollE.addEventListener("click", function () {
       switchPlayer();
       console.log(`player active ${activePlayer}`);
     }
-  }
+  } // if one of the player get 20 the game is over
 });
 
-btnNewE.addEventListener("click", init)
+btnNewE.addEventListener("click", init);

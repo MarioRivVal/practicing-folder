@@ -9,10 +9,7 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="left-container-player--0">
-        <div class="img-box">
-          <img src="img/dice-6.png" alt="img-dice" class="dice-photo dice-photo--0 hidden" width="140px" />
-        </div>
+      <div class="left-container-player--0 active-player">
         <div class="score-box score-box-player--0">
           <div class="score-text">Score</div>
           <div class="score score-player--0">2</div>
@@ -20,9 +17,6 @@
       </div>
 
       <div class="right-container-player--1">
-        <div class="img-box">
-          <img src="" alt="" class="dice-photo dice-photo--1" width="140px" />
-        </div>
         <div class="score-box score-box-player--1">
           <div class="score-text">Score</div>
           <div class="score score-player--1">4</div>
@@ -30,6 +24,9 @@
       </div>
 
       <div class="roll-guess-newgame-box">
+        <div class="img-box">
+          <img src="img/dice-6.png" alt="img-dice" class="dice-photo dice-photo--0 hidden" width="140px" />
+        </div>
         <button class="btn-roll">roll</button>
         <input
           type="number"
@@ -37,9 +34,9 @@
           placeholder=""
           max="6"
           min="1"
-        />
+        >
         <button class="btn-newgame">new</button>
-     
+      <div/>
     <script src="script.js"></script>
   </body>
 </html>

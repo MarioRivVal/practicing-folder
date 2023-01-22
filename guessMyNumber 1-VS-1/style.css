@@ -27,13 +27,11 @@ body {
 }
 
 .left-container-player--0 {
-  background: linear-gradient(to bottom, white, darkblue, white);
   margin: 5px 0 5px 5px;
   border-radius: 20px 0 0 20px;
 }
 .right-container-player--1 {
   margin: 5px 5px 5px 0;
-
   border-radius: 0 20px 20px 0;
 }
 .img-box {
@@ -76,8 +74,8 @@ body {
 }
 
 .roll-guess-newgame-box {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   background-color: #f6e96f3a;
   border: #e85968 solid 3px;
   border-radius: 10px;
@@ -86,8 +84,8 @@ body {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  bottom: 200px;
-  left: 396px;
+  bottom: 100px;
+  left: 350px;
 }
 .btn-roll,
 .btn-newgame {
@@ -119,4 +117,7 @@ body {
 }
 .hidden {
   display: none;
+}
+.active-player {
+  background: linear-gradient(to bottom, white, darkblue, white);
 }
