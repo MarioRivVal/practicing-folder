@@ -22,6 +22,8 @@ const init = function () {
   document.querySelector(".guess-number").value = false;
   playerBox0E.classList.add("active-player");
   playerBox1E.classList.remove("active-player");
+  playerBox0E.classList.remove("player-winner");
+  playerBox1E.classList.remove("player-winner");
 };
 init();
 
@@ -36,7 +38,8 @@ const switchPlayer = function () {
   playerBox1E.classList.toggle("active-player");
 };
 
-// roll click listener
+// roll dice click listener
+
 btnRollE.addEventListener("click", function () {
   if (playing) {
     const guessE = Number(document.querySelector(".guess-number").value);
@@ -70,27 +73,28 @@ btnRollE.addEventListener("click", function () {
           scores[activePlayer] = scores[activePlayer] + currentScore;
           document.querySelector(`.score-player--${activePlayer}`).textContent =
             scores[activePlayer];
-          switchPlayer();
+
+          if (scores[activePlayer] >= 5) {
+            playing = false;
+            document.querySelector(".guess-number").value = false;
+
+            document
+              .querySelector(`.container-player--${activePlayer}`)
+              .classList.add("player-winner");
+            document
+              .querySelector(`.container-player--${activePlayer}`)
+              .classList.remove("active-player");
+          } else {
+            switchPlayer();
+          }
         }
       }
       if (count == 5) {
         switchPlayer();
       }
-    } 
+    }
   }
 });
 
 // New game buttom
 btnNewE.addEventListener("click", init);
-
-
-if (scores[activePlayer] >= 5) {
-  playing = false;
-
-  document
-    .querySelector(`.container-player--${activePlayer}`)
-    .classList.add("player-winner");
-  document
-    .querySelector(`.container-player--${activePlayer}`)
-    .classList.remove("active-player");
-}
