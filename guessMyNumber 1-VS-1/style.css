@@ -5,6 +5,7 @@
 
 body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image:linear-gradient( to top left, #1864ab 0%,  #edf2ff 100%  ) ;
 }
 
 .main-container {
@@ -16,21 +17,23 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+  background-color:#e5dbff;
+  box-shadow:0px 4px 20px darkblue
 }
 
-.left-container-player--0,
-.right-container-player--1 {
+.container-player--0,
+.container-player--1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-.left-container-player--0 {
+.container-player--0 {
   margin: 5px 0 5px 5px;
   border-radius: 20px 0 0 20px;
 }
-.right-container-player--1 {
+.container-player--1 {
   margin: 5px 5px 5px 0;
   border-radius: 0 20px 20px 0;
 }
@@ -76,7 +79,7 @@ body {
 .roll-guess-newgame-box {
   width: 300px;
   height: 500px;
-  background-color: #f6e96f3a;
+  background-color: #00008b24;
   border: #e85968 solid 3px;
   border-radius: 10px;
   display: flex;
@@ -119,5 +122,9 @@ body {
   display: none;
 }
 .active-player {
-  background: linear-gradient(to bottom, white, darkblue, white);
+
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.player-winner{
+  background-color:#2f2f2f ;
 }
