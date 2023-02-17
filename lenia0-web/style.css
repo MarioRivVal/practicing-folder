@@ -13,14 +13,16 @@ html {
   font-size: 62.5%;
 }
 
+
 .main-box {
   width: 80rem;
   margin: 10rem auto;
   font-family: "Pt sans", sans-serif;
-  border: 1px solid black;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
 }
 .primary-box {
-  margin: 4.6rem 0 3.2rem 3.2rem;
+  padding-top: 3.4rem;
+  margin: 0 3.2rem 3.2rem;
   font-family: "Poppins", sans-serif;
 }
 .primary-tittle-box {
@@ -61,10 +63,19 @@ html {
 .central-heading--3 {
   font-size: 3.2rem;
 }
+.main-img-text-box{
+  height: 60rem;
+  position: relative;
+}
+.img-box{
+  background-color: blueviolet;
+  margin: 0 3.2rem 3.2rem 3.2rem;
+}
 .img-box div {
   content: "";
   background-position: center;
   background-size: cover;
+  position: absolute;
   /* filter: brightness(0);
   opacity: 50%; */
 }
@@ -78,6 +89,9 @@ html {
     ),
     url("img/potrait-1.jpg");
   border-radius: 50%;
+  
+  top: 0rem;
+  left: 16rem;
 }
 .img-2 {
   width: 16rem;
@@ -88,6 +102,9 @@ html {
     ),
     url("img/potrait-2.jpg");
   border-radius: 50%;
+  top: 5rem;
+  right: 28rem;
+  z-index: -3;
 }
 .img-3 {
   width: 22rem;
@@ -98,6 +115,9 @@ html {
     ),
     url("img/potrait-3.jpg");
   border-radius: 30px;
+ top: 16rem;
+ left: 14rem;
+ z-index: -2;
 }
 .img-4 {
   width: 26rem;
@@ -108,6 +128,9 @@ html {
     ),
     url("img/potrait-4.jpg");
   border-radius: 30px;
+  top: 18rem;
+  right: 13rem;
+  z-index: -4;
 }
 .img-5 {
   width: 20rem;
@@ -118,11 +141,26 @@ html {
     ),
     url("img/potrait-5.jpg");
   border-radius: 50%;
+  bottom: 16rem;
+  left: 23rem;
+  z-index: -3;
 }
 .text-1 {
-  color: aqua;
-  font-size: 3rem;
-  line-height: 0.9;
   display: inline-block;
+  color: aqua;
+  font-size: 2.4rem;
+  line-height: 0.9;
   padding: 1.2rem;
+  bottom: 10rem;
+  right: 8rem;
+}
+.text-2{
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: aqua;
+  padding: .8rem 2.8rem;
+  border-radius: 20px;
+  bottom: 3rem;
+  right: 15rem;
 }
