@@ -1,12 +1,26 @@
-
 /* 
+
+
+----font size---
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+----spacing----
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 ---- colors----
 
-primary color: #63e6be
-secondary color: #1864ab
-tertiary color: #f8f9fa
-text:
+primary color: #63e6be    secondary color: #1864ab
+
+dark-green: #59cfab
+light-green: #92eed2
+
+dark-blue: #135089
+light-blue:#74a2cd
+
+tertiary color: #fafafa
+text: #141414
 
 
 
@@ -22,7 +36,59 @@ small margin:
 section margin:
 h2 margin: 
 
+----spacing---
+
+small: 4.4rem
+big: 5.2rem
+
+
+----text sizing ----
+
+h4: 4.4rem
+
+----icon sizing ----
+
+big: 6.2rem
 
 
 
 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "roboto", sans-serif;
+  color: #141414;
+}
+
+/* ---- RE-USE GRIDS  */
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* ---- MARGINS ---- */
+
+.small-margin{
+  margin: 0 7.4rem;
+}
+.medium-margin{
+
+}
+.big-margin{
+
+}
