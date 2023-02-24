@@ -1,34 +1,98 @@
-.section-hero{
-  
-}
-.main-nav{
-display: flex;
-align-items: center;
-grid-column: 1/4;
-}
-.logo-name-box{
-  display: flex;
-  align-items:center;
-  margin-right: 7.4rem;
 
+/*/////////////////////////////////////////*/
+/*    HERO   */
+/*/////////////////////////////////////////*/
+
+/************* LEFT-BOX ***************/
+.section-hero {
+  grid-template-rows: repeat(2, 1fr);
+  height:100vh;
 }
-.heart-icon{
+.left-box{
+  grid-column: 1/4;
+  grid-row: 1/3;
+  background-color: #fafafa;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 2.4rem;
+  margin-left: 7.4rem;
+}
+.logo-name-box {
+  display: flex;
+  align-items: center;
+  margin-right: 7.4rem;
+}
+.heart-icon {
   width: 6.2rem;
   height: 6.2rem;
-  color:#59cfab ;
+  color: #59cfab;
 }
-.company-name{
+.company-name {
   font-size: 4.4rem;
   font-weight: 700;
 }
-.nav{
+.nav {
   list-style: none;
   display: flex;
   gap: 4.4rem;
- 
 }
-.nav-link:link,.nav-link:visited{
-display: inline-block;
-text-decoration: none;
-color: #141414;
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #141414;
+  font-size: 1.8rem;
+}
+.nav-link:hover,
+.nav-link:active {
+  text-decoration: underline;
+  color: #59cfab;
+}
+.star-icon{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/************* RIGHT BOX ***************/
+.right-box{
+  grid-column: 4/6;
+  grid-row:1/3 ;
+  background-color:#92eed2;
+}
+.phone-book-box {
+  padding-top: 2.4rem;
+  margin-right: 7.4rem;
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+  font-size: 1.8rem;
+  justify-content: end;
+}
+.btn-book:link,
+.btn-book:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  color: #141414;
+  background-color: #92eed2;
+}
+.btn-book:hover,
+.btn-book:active {
+  text-decoration: underline;
+  color: #fafafa;
+  background-color: #135089;
+}
+.btn-phone:link,
+.btn-phone:visited{
+  text-decoration: none;
+  color: #141414;
+}
+.btn-phone:hover,
+.btn-phone:visited{
+  color: #135089;
+  text-decoration: underline;
 }
