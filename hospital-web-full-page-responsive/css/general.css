@@ -72,7 +72,6 @@ body {
   color: #141414;
 }
 
-
 /* ---- RE-USE GRIDS  */
 .grid {
   display: grid;
@@ -89,15 +88,36 @@ body {
 
 /* ---- MARGINS ---- */
 
-.small-padding{
- padding:0 8rem;
+.small-padding {
+  padding: 0 8rem;
 }
-.medium-padding{
-padding:0 19.2rem ;
+.medium-padding {
+  padding: 0 19.2rem;
 }
-.big-margin{
+.big-margin {
+}
+.terniary-tittle {
+}
 
+/* ---- FLOOTING CICLES ---- */
+.cicle {
+  border-top-left-radius: 100%;
+  border-top: 5px solid #135089;
+  border-left: 5px solid #135089;
+  background-color: #92eed2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.terniary-tittle{
-
+.cicle--small {
+  width: 15rem;
+  height: 15rem;
+}
+.cicle--medium {
+  width: 20rem;
+  height: 20rem;
+}
+.cicle--big {
+  width: 25rem;
+  height: 25rem;
 }
