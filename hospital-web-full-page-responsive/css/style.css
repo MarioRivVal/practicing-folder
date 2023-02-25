@@ -2,12 +2,13 @@
 /*    HERO   */
 /*/////////////////////////////////////////*/
 
-/************* LEFT-BOX ***************/
+/************* HERO LEFT-BOX ***************/
 .section-hero {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 15% 85%;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 10rem 1fr;
   height: 100vh;
+  position: relative;
 }
 
 .main-nav {
@@ -15,7 +16,6 @@
   align-items: center;
   padding-left: 8rem;
   background-color: #fafafa;
-  grid-column: 1/4;
 }
 .logo-name-box {
   display: flex;
@@ -34,7 +34,7 @@
 .nav {
   list-style: none;
   display: flex;
-  gap: 4.4rem;
+  gap: 4.8rem;
 }
 .nav-link:link,
 .nav-link:visited {
@@ -52,7 +52,7 @@
 .hero-tittle-box {
   display: flex;
   flex-direction: column;
-  grid-column: 1/4;
+
   align-items: start;
   justify-content: center;
   background-color: #fafafa;
@@ -60,6 +60,7 @@
 .hero-tittle-box div {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .star-icon {
   width: 2.4rem;
@@ -81,7 +82,7 @@
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
 }
-.hero-tittle-box button{
+.hero-tittle-box button {
   margin-top: 2.4rem;
   background: none;
   border: none;
@@ -96,27 +97,24 @@
   background-color: #135089;
 }
 .btn-book--2:hover,
-.btn-book--2:active{
+.btn-book--2:active {
   background-color: #92eed2;
   color: #141414;
   text-decoration: underline;
-} 
+}
 
-/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-144 / 160 / 192 / 224 / 256 / 320 / 384 / 448 / 512 / 640 / 768 */
-
-/************* RIGHT BOX ***************/
+/************* HERO RIGHT BOX ***************/
 .phone-book-box {
   display: flex;
-  grid-column: 4/6;
+  grid-column: 2/3;
   grid-row: 1/2;
   align-items: center;
-  gap: 4.4rem;
+  gap: 4.8rem;
   justify-content: end;
   padding-right: 8rem;
   background-color: #92eed2;
 }
-.phone-book-box button{
+.phone-book-box button {
   background-color: none;
   border: 1px solid #141414;
 }
@@ -148,4 +146,48 @@
 .btn-phone:visited {
   color: #135089;
   text-decoration: underline;
+}
+.green-empty-box {
+  background-color: #92eed2;
+}
+
+/************* FOOTING BOXES ***************/
+.doctor-img {
+  width: 36%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+}
+
+.happy-box {
+  display: flex;
+  gap: 2.4rem;
+  background-color: #fafafa;
+  align-items: center;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 13%;
+  z-index: 1;
+}
+.icon-box {
+  display: flex;
+  padding: 0.5rem;
+  background-color: #92eed2;
+}
+.happy-icon {
+  width: 6.2rem;
+  height: 6.2rem;
+  fill: #135089;
+  stroke: #135089;
+}
+.pacients-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.happy-patients {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
