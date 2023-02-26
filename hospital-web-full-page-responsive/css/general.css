@@ -35,7 +35,9 @@ small margin: 8rem
 
 ----margins bottom----
 
-section margin:
+section distance:
+big: 9.6rem
+medium: 6.4rem
 h2 margin: 
 
 ----spacing---
@@ -48,18 +50,19 @@ big: 5.2rem
 
 
 ----text sizing ----
-smaller 1.6rem
+smaller 1.4rem
 small: 1.8rem
 h1: 6.2rem
 h2:
-h3:
-h4: 1.8rem
+h3:1.6rem
+h4: 1.4rem
 
 
 ----icon sizing ----
 
 big: 6.2rem
-medium:2.4rem
+medium:
+small:2.4rem
 
 
 
@@ -79,6 +82,17 @@ body {
 }
 
 /* ---- RE-USE ---- */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid--3-cols-container{
+  width: 100rem;
+  gap: 4.8rem;
+  margin: 0 12.8rem 9.6rem 12.8rem;
+}
 .grid {
   display: grid;
 }
@@ -87,6 +101,7 @@ body {
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  
 }
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
@@ -96,11 +111,19 @@ body {
   display: inline-block;
   padding: 1rem 2rem;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .icon--big {
   width: 6.2rem;
   height: 6.2rem;
+}
+.icon--medium{
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.icon--small{
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .icon--blue {
   color: #12187d;
@@ -111,19 +134,44 @@ body {
   padding: 0 8rem;
 }
 .medium-padding {
-  padding: 0 19.2rem;
+  padding: 0 12.8rem;
 }
-.big-margin {
+.big-padding {
 }
 .terniary-tittle {
+}
+
+/* ---- TITTLES ---- */
+
+.secondary-tittle-box {
+  width: 52rem;
+  text-align: center;
+  padding: 9.6rem 0 6.4rem 0;
+  
+}
+.quaternary-tittle{
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.ternary-tittle {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #43418B;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+.secondary-tittle {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 /* ---- FLOOTING CICLES ---- */
 
 .cicle-green-hero-box {
   border-top-left-radius: 100%;
-  border-top: 5px solid #12187d;
-  border-left: 5px solid #12187d;
+  border-top: 3px solid #12187d;
+  border-left: 3px solid #12187d;
   background-color: #92eed2;
   position: absolute;
   bottom: 0;
@@ -144,8 +192,8 @@ body {
 
 .cicle-blue-feature-box {
   border-top-right-radius: 100%;
-  border-top: 5px solid #a0b5f1;
-  border-right: 5px solid #a0b5f1;
+  border-top: 3px solid #43418B;
+  border-right: 3px solid #43418B;
   background-color: #12187d;
   position: absolute;
   bottom: 0;
@@ -162,5 +210,5 @@ body {
 .bb-cicle--big {
   width: 16rem;
   height: 16rem;
-  transform: translate(-20%, 5%);
+  transform: translate(-35%, 15%);
 }
