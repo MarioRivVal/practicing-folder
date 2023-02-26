@@ -18,7 +18,7 @@ primary color: #63e6be    secondary color: #1864ab
 dark-green: #59cfab
 light-green: #92eed2
 
-dark-blue: #135089
+dark-blue: #12187D
 light-blue:#74a2cd
 
 tertiary color: #fafafa
@@ -43,11 +43,17 @@ smaller:2.4
 small: 4.8rem
 big: 5.2rem
 
+---- line height----
+1.5
+
 
 ----text sizing ----
 smaller 1.6rem
 small: 1.8rem
-h4: 6.2rem
+h1: 6.2rem
+h2:
+h3:
+h4: 1.8rem
 
 
 ----icon sizing ----
@@ -72,7 +78,7 @@ body {
   color: #141414;
 }
 
-/* ---- RE-USE GRIDS  */
+/* ---- RE-USE ---- */
 .grid {
   display: grid;
 }
@@ -86,6 +92,19 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.icon--big {
+  width: 6.2rem;
+  height: 6.2rem;
+}
+.icon--blue {
+  color: #12187d;
+}
 /* ---- MARGINS ---- */
 
 .small-padding {
@@ -100,24 +119,48 @@ body {
 }
 
 /* ---- FLOOTING CICLES ---- */
-.cicle {
+
+.cicle-green-hero-box {
   border-top-left-radius: 100%;
-  border-top: 5px solid #135089;
-  border-left: 5px solid #135089;
+  border-top: 5px solid #12187d;
+  border-left: 5px solid #12187d;
   background-color: #92eed2;
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.cicle--small {
-  width: 15rem;
-  height: 15rem;
+.gb-cicle--small {
+  width: 8rem;
+  height: 8rem;
 }
-.cicle--medium {
-  width: 20rem;
-  height: 20rem;
+.gb-cicle--medium {
+  width: 12rem;
+  height: 12rem;
 }
-.cicle--big {
-  width: 25rem;
-  height: 25rem;
+.gb-cicle--big {
+  width: 16rem;
+  height: 16rem;
+}
+
+.cicle-blue-feature-box {
+  border-top-right-radius: 100%;
+  border-top: 5px solid #a0b5f1;
+  border-right: 5px solid #a0b5f1;
+  background-color: #12187d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bb-cicle--small {
+  width: 8rem;
+  height: 8rem;
+}
+.bb-cicle--medium {
+  width: 12rem;
+  height: 12rem;
+}
+.bb-cicle--big {
+  width: 16rem;
+  height: 16rem;
+  transform: translate(-20%, 5%);
 }

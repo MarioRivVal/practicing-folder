@@ -1,5 +1,5 @@
 /*/////////////////////////////////////////*/
-/*    HERO   */
+/*------------   HERO  ---------------   */
 /*/////////////////////////////////////////*/
 
 /************* HERO LEFT-BOX ***************/
@@ -23,9 +23,7 @@
   margin-right: 7.4rem;
 }
 .heart-icon {
-  width: 6.2rem;
-  height: 6.2rem;
-  color: #59cfab;
+  color: #92eed2;
 }
 .company-name {
   font-size: 4.4rem;
@@ -47,7 +45,7 @@
 .nav-link:hover,
 .nav-link:active {
   text-decoration: underline;
-  color: #59cfab;
+  color: #92eed2;
 }
 .hero-tittle-box {
   display: flex;
@@ -79,7 +77,7 @@
   margin-bottom: 2.4rem;
 }
 .hero-tittle-box p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1.2rem;
 }
 .hero-tittle-box button {
@@ -87,17 +85,13 @@
   background: none;
   border: none;
 }
-.btn-book--2:link,
-.btn-book--2:visited {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.4rem;
+.btn-blue:link,
+.btn-blue:visited {
   color: #fafafa;
-  background-color: #135089;
+  background-color: #12187d;
 }
-.btn-book--2:hover,
-.btn-book--2:active {
+.btn-blue:hover,
+.btn-blue:active {
   background-color: #92eed2;
   color: #141414;
   text-decoration: underline;
@@ -119,21 +113,17 @@
   border: 1px solid #141414;
 }
 
-.btn-book--1:link,
-.btn-book--1:visited {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.6rem;
+.btn-green:link,
+.btn-green:visited {
   font-weight: 500;
   color: #141414;
   background-color: #92eed2;
 }
-.btn-book--1:hover,
-.btn-book--1:active {
+.btn-green:hover,
+.btn-green:active {
   text-decoration: underline;
   color: #fafafa;
-  background-color: #135089;
+  background-color: #12187d;
 }
 .btn-phone:link,
 .btn-phone:visited {
@@ -144,7 +134,7 @@
 }
 .btn-phone:hover,
 .btn-phone:visited {
-  color: #135089;
+  color: #12187d;
   text-decoration: underline;
 }
 .green-empty-box {
@@ -177,11 +167,8 @@
   background-color: #92eed2;
 }
 .happy-icon {
-  width: 6.2rem;
-  height: 6.2rem;
-  fill: #135089;
-  stroke: #135089;
-
+  fill: #12187d;
+  stroke: #12187d;
 }
 .pacients-number {
   font-size: 3rem;
@@ -191,4 +178,36 @@
 .happy-patients {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/*/////////////////////////////////////////*/
+/* ----------    FEATURES    ----------  */
+/*/////////////////////////////////////////*/
+
+.section-features {
+  background-color: #12187d;
+  position: relative;
+  overflow: hidden;
+}
+.feature-main-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 12rem 8rem;
+}
+
+.feature-main-box h4 {
+  font-size: 1.8rem;
+  color: #fafafa;
+  margin-bottom: 2.4rem;
+}
+.feature-main-box p {
+  font-size: 1.6rem;
+  color: #a0b5f1;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.feature-icon-box {
+  background-color: #92eed2;
+  padding: 4rem 1rem;
 }
