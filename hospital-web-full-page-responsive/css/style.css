@@ -234,7 +234,7 @@
   display: inline-block;
   padding: 1rem;
   border-radius: 100%;
-  background-color:#fbefef;
+  background-color: #fbefef;
   fill: #59cfab;
   margin-bottom: 2.4rem;
 }
@@ -249,10 +249,43 @@
   text-decoration: none;
   font-size: 1.2rem;
   color: #12187d;
-  
 }
 .service-link:hover,
-.service-link:active{
+.service-link:active {
   text-decoration: underline;
   color: #92eed2;
 }
+
+/*/////////////////////////////////////////*/
+/* ----------    VIDEO   ----------  */
+/*/////////////////////////////////////////*/
+
+.section-video {
+  background-color: #92eed2;
+  padding-bottom: 6.4rem;
+  position: relative;
+}
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rem;
+  height: 40rem;
+  background-image: linear-gradient(
+      rgba(18, 23, 125, 0.2),
+      rgba(18, 23, 125, 0.2)
+    ),
+    url(../img/video-doctor.jpg);
+
+  background-position: center;
+  background-size: cover;
+}
+.video-icon-box{
+  display: flex;
+  padding: 1rem;
+  border-radius: 100%;
+  background-color:#fafafa ;
+  fill: #fafafa;
+  
+}
+
