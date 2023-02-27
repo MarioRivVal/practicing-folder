@@ -9,7 +9,7 @@
   grid-template-rows: 10rem 1fr;
   height: 100vh;
   position: relative;
-  background-color:#fafafa;
+  background-color: #fafafa;
 }
 
 .main-nav {
@@ -212,9 +212,8 @@
 }
 .feature-icon-box {
   background-color: #92eed2;
-  padding: 2rem .5rem;
+  padding: 2rem 0.5rem;
 }
-
 
 /*/////////////////////////////////////////*/
 /* ----------    SERVICES    ----------  */
@@ -224,11 +223,36 @@
   background-color: #fafafa;
 }
 
-.service{
-  height: 50rem;
-  background-color: pink;
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem 3.2rem;
+  border: 3px solid #fbefef;
 }
-.service-icon-box{
-  padding: 2rem;
-  background-color: #43418B;
+.service-icon-box {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 100%;
+  background-color:#fbefef;
+  fill: #59cfab;
+  margin-bottom: 2.4rem;
+}
+.service-box p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+.service-link:link,
+.service-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #12187d;
+  
+}
+.service-link:hover,
+.service-link:active{
+  text-decoration: underline;
+  color: #92eed2;
 }
