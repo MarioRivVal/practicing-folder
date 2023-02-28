@@ -123,6 +123,19 @@ body {
   color: #141414;
   text-decoration: underline;
 }
+.btn-white:link,
+.btn-white:visited {
+  color: #141414;
+  border: 1px solid #141414;
+  background-color: #fafafa;
+}
+.btn-white:hover,
+.btn-white:active {
+  border: 1px solid #59cfab;
+  background-color: #59cfab;
+  color: #fafafa;
+  text-decoration: underline;
+}
 
 .icon--big {
   width: 6.2rem;
@@ -180,7 +193,6 @@ body {
   border-top-left-radius: 100%;
   border-top: 3px solid #12187d;
   border-left: 3px solid #12187d;
-  background-color: #92eed2;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -202,7 +214,6 @@ body {
   border-top-right-radius: 100%;
   border-top: 3px solid #43418B;
   border-right: 3px solid #43418B;
-  background-color: #12187d;
   position: absolute;
   bottom: 0;
   left: 0;
