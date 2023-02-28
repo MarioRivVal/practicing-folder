@@ -445,3 +445,19 @@
   font-size: 1.2rem;
   color: #43418B;
 }
+.article-link:hover,.article-link:active{
+text-decoration: underline;
+color:#12187d ;
+}
+
+ /*/////////////////////////////////////////*/
+/* ----------    tESTIMONIALS  ----------  */
+/*/////////////////////////////////////////*/
+
+.testimonials-box{
+  width: 85rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 9.6rem;
+background-color: aqua;
+}
