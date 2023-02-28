@@ -96,9 +96,7 @@ body {
 .grid {
   display: grid;
 }
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
   
@@ -112,7 +110,20 @@ body {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.4rem;
+  text-align: center;
 }
+.btn-blue:link,
+.btn-blue:visited {
+  color: #fafafa;
+  background-color: #12187d;
+}
+.btn-blue:hover,
+.btn-blue:active {
+  background-color: #92eed2;
+  color: #141414;
+  text-decoration: underline;
+}
+
 .icon--big {
   width: 6.2rem;
   height: 6.2rem;
