@@ -13,15 +13,17 @@
 
 ---- colors----
 
-primary color: #63e6be    secondary color: #1864ab
+
 
 dark-green: #59cfab
 light-green: #92eed2
 
 dark-blue: #12187D
 light-blue:#74a2cd
+cicles-blue:#43418B
 
 tertiary color: #fafafa
+shadow-color:#fbefef
 text: #141414
 
 
@@ -79,6 +81,7 @@ html {
 body {
   font-family: "roboto", sans-serif;
   color: #141414;
+  background-color:#fafafa;
 }
 
 /* ---- RE-USE ---- */
@@ -87,18 +90,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.grid--3-cols-container{
-  width: 100rem;
-  gap: 4.8rem;
-  margin: 0 12.8rem 9.6rem 12.8rem;
-}
+
 .grid {
   display: grid;
 }
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  width: 100rem;
+  gap: 4.8rem;
+  margin-bottom:9.6rem;
   
 }
 .grid--5-cols {
