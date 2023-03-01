@@ -92,6 +92,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+.box-centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .grid {
   display: grid;
@@ -107,6 +112,8 @@ body {
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
 }
+
+/* ---- BUTTONS AND ICONS ---- */
 
 .btn {
   display: inline-block;
@@ -233,4 +240,26 @@ body {
   width: 16rem;
   height: 16rem;
   transform: translate(-35%, 15%);
+}
+
+/* ----      IMAGES    ---- */
+
+.img-main-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.img-box--1 {
+  background-color: #fbefef;
+}
+.img-box--2 {
+  position: relative;
+  border-right: 3px solid #fbefef;
+}
+.img-shadow {
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-16%, 4%);
 }
