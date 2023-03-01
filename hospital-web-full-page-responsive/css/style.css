@@ -254,7 +254,7 @@
 /*/////////////////////////////////////////*/
 
 .section-video {
-  background-color: #92eed2;
+  background-color: #defaf2;
   padding-bottom: 6.4rem;
   position: relative;
 }
@@ -477,7 +477,8 @@
 /*/////////////////////////////////////////*/
 
 .section-cta{
-  background-color: #92eed2;
+  background-color: #defaf2;
+  position: relative;
 }
 .cta-main-box{
   margin-bottom: 6.4rem;
@@ -520,6 +521,12 @@ color: #12187d;
   padding: 2rem;
   gap: 2rem;
 }
+*:focus{
+outline: none;
+/* outline: 4px dotted pink;
+outline-offset: 6px; */
+  box-shadow: 0 0 0 0.8rem rgba(251, 239, 239, 0.5);
+}
 .input-form{
   background-color: #fafafa;
   border: 2px solid #fbefef;
@@ -530,6 +537,7 @@ color: #12187d;
   width: auto;
   grid-column: 1/3;
   grid-row: 3/5;
+ 
 }
 .btn-form{
   width: 20rem;
@@ -538,9 +546,27 @@ grid-column: 1/3;
 border: none;
 background-color: #12187d;
 color: #fafafa;
+cursor: pointer;
 }
 .btn-form:hover{
   background-color: #59cfab;
   color: #141414;
   text-decoration:underline ;
+}
+
+/*/////////////////////////////////////////*/
+/* ----------    FOOTER    ----------  */
+/*/////////////////////////////////////////*/
+
+.main-footer-box{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer-name-company-box{
+  display: flex;
+  align-items: center;
+}
+.footer-social-logos-box{
+  display: flex;
+  gap: 6.4rem;
 }

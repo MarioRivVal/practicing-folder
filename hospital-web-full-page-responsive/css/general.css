@@ -17,6 +17,7 @@
 
 dark-green: #59cfab
 light-green: #92eed2
+light backcground:#defaf2
 
 dark-blue: #12187D
 light-blue:#74a2cd
@@ -108,9 +109,6 @@ body {
   gap: 4.8rem;
   margin-bottom:9.6rem;
   
-}
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
 }
 
 /* ---- BUTTONS AND ICONS ---- */
