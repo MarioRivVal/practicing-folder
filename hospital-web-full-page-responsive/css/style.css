@@ -2,19 +2,24 @@
 /*------------   HERO  ---------------   */
 /*/////////////////////////////////////////*/
 
-/************* HERO LEFT-BOX ***************/
 .section-hero {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 10rem 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 12rem 1fr;
   height: 100vh;
   position: relative;
 }
-
-.main-nav {
+.hero-tittle-main{
+  grid-column: 1/4;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 8rem;
+}
+.phone-book-main{
+  background-color: #92eed2;
+  grid-row: 1/3;
+  grid-column: 4/6;
+  position: relative;
 }
 .logo-name-box {
   display: flex;
@@ -29,9 +34,9 @@
   font-weight: 700;
 }
 .nav {
-  list-style: none;
   display: flex;
-  gap: 4.8rem;
+  gap: 3.2rem;
+  list-style: none;
 }
 .nav-link:link,
 .nav-link:visited {
@@ -46,13 +51,16 @@
   text-decoration: underline;
   color: #92eed2;
 }
-.hero-tittle-box {
+
+.main-nav {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  width: 75rem;
-  margin: 0 auto;
+  align-items: center;
+  grid-column: 1/4;
+  padding-left: 1.4rem;
+}
+
+.hero-tittle-box {
+  width: 50rem;
 }
 .hero-tittle-box div {
   display: flex;
@@ -80,17 +88,13 @@
   background: none;
   border: none;
 }
-
-/************* HERO RIGHT BOX ***************/
 .phone-book-box {
   display: flex;
-  grid-column: 2/3;
-  grid-row: 1/2;
   align-items: center;
   gap: 4.8rem;
   justify-content: end;
-  padding-right: 8rem;
-  background-color: #92eed2;
+  padding-right: 2rem;
+  height: 12rem;
 }
 .phone-book-box button {
   background-color: none;
@@ -122,17 +126,13 @@
   background-color: #12187d;
 }
 
-.green-empty-box {
-  background-color: #92eed2;
-}
-
 /************* FOOTING BOXES ***************/
 .doctor-img {
   width: auto;
   height: 90%;
   position: absolute;
   bottom: 0;
-  right: 22%;
+  right: 60%;
 }
 
 .happy-box {
@@ -154,6 +154,10 @@
 .happy-icon {
   fill: #12187d;
   stroke: #12187d;
+}
+.happy-numbers-box {
+  display: flex;
+  flex-direction: column;
 }
 .pacients-number {
   font-size: 3rem;
@@ -474,7 +478,7 @@
   background: none;
   cursor: pointer;
 }
-.arrows:hover svg{
+.arrows:hover svg {
   background-color: #12187d;
   color: #fafafa;
 }
@@ -575,9 +579,8 @@ outline-offset: 6px; */
   grid-template-columns: repeat(5, 1fr);
   gap: 6rem;
   align-items: center;
-  margin: 6.4rem 9.6rem;
+  margin: 4.8rem 9.6rem;
   color: #74a2cd;
-  
 }
 .logos-col {
   grid-column: 1/3;
@@ -623,15 +626,15 @@ outline-offset: 6px; */
   color: inherit;
 }
 .footer-links li a:hover,
-.footer-links li a:active{
+.footer-links li a:active {
   text-decoration: underline;
-  color:#fafafa;
+  color: #fafafa;
 }
-.copyright-box{
+.copyright-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   width: 100%;
   padding: 1.4rem 6.4rem;
   background-color: #59cfab;

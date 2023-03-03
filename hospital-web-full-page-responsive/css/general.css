@@ -160,15 +160,6 @@ body {
 .icon--blue {
   color: #12187d;
 }
-/* ---- MARGINS ---- */
-
-.small-padding {
-  padding: 0 8rem;
-}
-.medium-padding {
-  padding: 0 12.8rem;
-}
-
 
 /* ---- TITTLES ---- */
 
@@ -260,4 +251,9 @@ body {
   top: 0;
   right: 0;
   transform: translate(-16%, 4%);
+}
+/* ----      HIDDEN ELEMENTS   ---- */
+
+.hidden-testimonial{
+  display:none;
 }
