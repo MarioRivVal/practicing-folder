@@ -6,14 +6,15 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 12rem 1fr;
-  height: 100vh;
   position: relative;
+  height: 100vh;
 }
 .hero-tittle-main{
   grid-column: 1/4;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .phone-book-main{
   background-color: #92eed2;
@@ -128,8 +129,8 @@
 
 /************* FOOTING BOXES ***************/
 .doctor-img {
-  width: auto;
-  height: 90%;
+  width: 80%;
+  height: auto;
   position: absolute;
   bottom: 0;
   right: 60%;

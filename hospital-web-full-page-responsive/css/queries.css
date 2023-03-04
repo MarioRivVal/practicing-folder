@@ -1,0 +1,50 @@
+
+/* ---------   WIDTH  ---------------- */
+/* >= 1300px */
+@media(min-width:82em){
+  html{
+    font-size: 72%;
+  }
+}
+
+@media (max-width: 75em) {
+  .hero-tittle-box {
+    width: 45rem;
+  }
+  .hero-tittle-box h4 {
+    font-size: 1.4rem;
+  }
+  .primary-tittle {
+    font-size: 4rem;
+  }
+  .doctor-img{
+    width: 90%;
+  }
+}
+/* <=1050px */
+@media(max-width:65em){
+ .grid--3-cols{
+  gap: 1.6rem;
+  width: 90rem;
+ }
+
+}
+/* <=950px */
+@media(max-width:60em){
+  html{
+    font-size: 52%;
+  }
+  .doctor-img{
+    width:70%;
+  }
+}
+/* ---------   HEIGHT ---------------- */
+/* >=1200px */
+@media(min-height:62em){
+  .section-hero{
+    height: 50vh;
+  }
+  .happy-box{
+    right: 5%;
+  }
+}
