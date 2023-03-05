@@ -78,11 +78,13 @@ small:2.4rem
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "roboto", sans-serif;
   color: #141414;
   background-color:#fafafa;
+  overflow-x: hidden;
 }
 
 /* ---- RE-USE ---- */
@@ -105,8 +107,10 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
   width: 100rem;
-  gap: 4.8rem;
+  gap: 3.2rem;
   margin-bottom:9.6rem;
   
 }
