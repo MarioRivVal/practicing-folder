@@ -316,9 +316,10 @@
 /* ----------    ABOUT   ----------  */
 /*/////////////////////////////////////////*/
 
+
 .about-main-box {
   width: 85rem;
-  margin: 9.5rem auto;
+  margin: 9.5rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 40rem 20rem;
@@ -405,6 +406,9 @@
 /* ----------    ARTICLES   ----------  */
 /*/////////////////////////////////////////*/
 
+.article-main{
+  margin-bottom: 0 !important;
+}
 .article-box {
   border: 3px solid #fbefef;
 }
