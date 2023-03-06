@@ -7,13 +7,14 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 9rem 1fr;
   position: relative;
-  height: 100vh;
+  height: 60rem;
 }
 .hero-tittle-main{
   grid-column: 1/4;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 2.4rem;
   
 }
 .phone-book-main{

@@ -1,8 +1,7 @@
-
 /* ---------   WIDTH  ---------------- */
 /* >= 1300px */
-@media(min-width:82em){
-  html{
+@media (min-width: 82em) {
+  html {
     font-size: 72%;
   }
 }
@@ -17,33 +16,36 @@
   .primary-tittle {
     font-size: 4rem;
   }
-  .doctor-img{
+  .doctor-img {
     width: 90%;
   }
 }
 /* <=1050px */
-@media(max-width:65em){
- .grid--3-cols{
-  gap: 1.6rem;
-  width: 90rem;
- }
-
+@media (max-width: 65em) {
+  .grid--3-cols {
+    gap: 1.6rem;
+    width: 90rem;
+  }
 }
 /* <=950px */
-@media(max-width:60em){
-  html{
+@media (max-width: 60em) {
+  html {
     font-size: 50%;
   }
-  .doctor-img{
-    width:70%;
+  .doctor-img {
+    width: 70%;
   }
-  .btn-mobile-nav{
+  .happy-box {
+    top: 50%;
+    right: 2%;
+  }
+  .btn-mobile-nav {
     display: block;
   }
-  .main-nav{
-    justify-content:space-between;
+  .main-nav {
+    justify-content: space-between;
   }
-  .nav{
+  .nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,53 +62,85 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
-    
   }
 
-  .btn-mobile-nav{
+  .btn-mobile-nav {
     display: block;
-    justify-self:self-end;
+    justify-self: self-end;
     z-index: 2;
-    
   }
-  .btn-phone:link,.btn-phone:visited{
+  .btn-phone:link,
+  .btn-phone:visited {
     display: none;
   }
   .nav-link:link,
   .nav-link:visited {
-    font-size:2rem ;
+    font-size: 2rem;
   }
-  .open-nav .nav{
+  .open-nav .nav {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
-    visibility:visible;
+    visibility: visible;
   }
-  .open-nav .icon-mobile-nav[name="close-icon"]{
-    display:block;
+  .open-nav .icon-mobile-nav[name="close-icon"] {
+    display: block;
   }
-  .open-nav .icon-mobile-nav[name="menu-icon"]{
-    display:none;
+  .open-nav .icon-mobile-nav[name="menu-icon"] {
+    display: none;
   }
-
-
+  /************* MOBILE PHONES ***************/
 }
 /* <=700px */
-@media(max-width:44em){
-  .grid--3-cols{
+@media (max-width: 44em) {
+  .grid--3-cols {
     grid-template-columns: 1fr;
     width: 70%;
   }
- 
 }
-/* ---------   HEIGHT ---------------- */
-/* >=1200px */
-@media(min-height:62em){
-  .section-hero{
-    height: 50vh;
+@media (max-width: 32em) {
+  .section-hero {
+    grid-template-rows: 9rem 1fr 9rem;
   }
-  .happy-box{
+  .hero-tittle-main {
+    grid-column: 1/5;
+  }
+  .phone-book-main {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+  .doctor-img {
+    width: 45%;
+    bottom: 100%;
+    right: 0;
+  }
+  .happy-box {
+    top: 14%;
     right: 5%;
+  }
+  .section-hero {
+    height: 80rem;
+  }
+  .secondary-tittle-box{
+    width: 44rem;
+    text-align: center;
+    padding: 8rem 0 4.8rem 0;
+  }
+ 
+  .gb-cicle--small {
+    width: 4rem;
+    height: 4rem;
+  }
+  .gb-cicle--medium {
+    width: 6rem;
+    height: 6rem;
+  }
+ .gb-cicle--big{
+    width: 8rem;
+    height: 8rem;
+  }
+  .video{
+    width: 48rem;
+  height: 24rem;
   }
 }
