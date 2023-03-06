@@ -186,4 +186,28 @@
   .hidden-testimonial{
     display: none;
   }
+  .cta-contact-ways{
+   flex-direction: column;
+   gap: 2.4rem;
+    
+  }
+  .form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-form {
+    width: 15rem;
+    height: 5rem;
+  }
+  .main-footer-box {
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 6rem;
+
+  }
+  .logos-col {
+    grid-column: 1/-1;
+  }
 }
