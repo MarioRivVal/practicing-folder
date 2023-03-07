@@ -79,6 +79,7 @@ small:2.4rem
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "roboto", sans-serif;
